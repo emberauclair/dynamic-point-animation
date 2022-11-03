@@ -24,7 +24,17 @@ body {
   text-align: center;
   margin: 0;
   margin-block-start: 0%;
-
+}
+#heading-small {
+  color: rgb(74, 198, 255);
+  text-transform: uppercase;
+  font-size: 5vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  margin-block-start: 0%;
 }
 
 
@@ -63,8 +73,8 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  min-width: 30%;
-  margin-left: 30%;
+  margin: 1px;
+
 
 }
 
@@ -72,7 +82,16 @@ body {
 
 
 /*add these 2 classes for centering*/
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
+.button {
+  width: 190px;
+  border: 1px solid red;
+}
 
 
 
