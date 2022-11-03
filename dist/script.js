@@ -107,6 +107,8 @@ const canvasBody = document.getElementById("canvas"),
 drawArea = canvasBody.getContext("2d");
 let delay = 200, tid,
 rgb = opts.lineColor.match(/\d+/g);
+// rejex to get all the digits from the provided text
+
 resizeReset();
 setup();
 
