@@ -6,10 +6,10 @@ let resizeReset = function() {
 const opts = { 
 	particleColor: "rgb(200,200,200)",
 	lineColor: "rgb(200,200,200)",
-	particleAmount: 30,
-	defaultSpeed: 1,
+	particleAmount: 100,
+	defaultSpeed: 0.01,
 	variantSpeed: 1,
-	defaultRadius: 2,
+	defaultRadius: 0,
 	variantRadius: 2,
 	linkRadius: 200,
 };
@@ -109,3 +109,4 @@ let delay = 200, tid,
 rgb = opts.lineColor.match(/\d+/g);
 resizeReset();
 setup();
+
