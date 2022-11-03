@@ -5,7 +5,7 @@ body {
   font-family: Futura, sans-serif;
 }
 
-#canvas, #text {
+#canvas{
   position: absolute;
   display: block;
   top: 0;
@@ -13,41 +13,38 @@ body {
   z-index: -1;
 }
 
-#text {
-  min-height: 100vh;
-  width: 100vw;
-  z-index: 1;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 8vmin;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  
-}
-#text {
-  min-height: 100vh;
-  width: 100vw;
-  z-index: 1;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 8vmin;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  
-}#heading {
+
+#heading {
   color: rgb(74, 198, 255);
   text-transform: uppercase;
-  font-size: 8vmin;
+  font-size: 6vmin;
   display: flex;
-  align-items: right;
+  align-items: center;
   justify-content: center;
   text-align: center;
-  
+  margin: 0;
+  margin-block-start: 0%;
+
 }
+
+
+#text {
+  min-height: 20vh;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 3vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  overflow-wrap: normal;
+  margin: 0;
+  margin-block-start: 0%;
+  width: 60%;
+  padding-left: 20%;
+  margin-top: -3em;
+}
+
 
 #text, #heading h1 {
   opacity: 0.9;
