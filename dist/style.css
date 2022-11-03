@@ -30,9 +30,9 @@ body {
 
 #text {
   min-height: 20vh;
+  max-height: 100vh;
   color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  font-size: 3vmin;
+  font-size: 6vmin;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,10 +40,40 @@ body {
   overflow-wrap: normal;
   margin: 0;
   margin-block-start: 0%;
-  width: 60%;
-  padding-left: 20%;
-  margin-top: -3em;
+  width: 80%;
+  padding-left: 10%;
+  margin-top: -2em;
 }
+#home-button {
+  background-color: rgb(74, 198, 255); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#nav-button {
+  background-color: rgb(74, 198, 255); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  min-width: 30%;
+  margin-left: 30%;
+
+}
+
+
+
+
+/*add these 2 classes for centering*/
+
+
 
 
 #text, #heading h1 {
