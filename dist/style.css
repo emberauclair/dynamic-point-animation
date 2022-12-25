@@ -59,13 +59,19 @@ body {
 .poem-card .card-text {
   font-size: 2.5vmin;
   line-height: 24px;
-  color: #9aa0a5;
+  color: rgb(215, 165, 221);
   overflow: hidden;
   height: 0;
   transition: all 0.3s ease;
 }
+.poem-card .card-text {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
 
-.poem-card:hover .card-text {
+.poem-card:hover .card-text,
+.poem-card:active .card-text {
   height: auto;
   overflow: visible;
 }

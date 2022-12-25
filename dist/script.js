@@ -2,13 +2,7 @@ let resizeReset = function() {
 	w = canvasBody.width = window.innerWidth;
 	h = canvasBody.height = window.innerHeight;
 }
-const poemCards = document.querySelectorAll('.poem-card');
 
-for (let i = 0; i < poemCards.length; i++) {
-  poemCards[i].addEventListener('click', function() {
-    this.querySelector('.poem-text').classList.toggle('visible');
-  });
-}
 
 const opts = { 
 	particleColor: "rgb(74,198,255)",
