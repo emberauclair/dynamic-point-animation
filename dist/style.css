@@ -2,6 +2,8 @@
 body {
   background-color: #202124;
 }
+
+
 #canvas {
   position: absolute;
   display: block;
@@ -53,8 +55,9 @@ body {
   font-weight: bold;
   margin: 10px 0;
   color: rgb(74, 198, 255);
-  
+  text-align: center;
 }
+
 
 .poem-card .card-text {
   font-size: 2.5vmin;
