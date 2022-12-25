@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2022 ember (https://codepen.io/Reli1/pen/bGKpvLa)
+Copyright (c) 2022 Ember (https://codepen.io/Reli1/pen/bGKpvLa)
 Fork of an original work Dynamic Point Mesh Animation with HTML5 Canvas (https://codepen.io/Reli1/pen/bGKpvLa)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
