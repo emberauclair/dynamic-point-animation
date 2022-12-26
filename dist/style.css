@@ -84,7 +84,7 @@ body {
 
 .poem-card .card-text {
   font-size: var(--font-size-small);
-  line-height: 24px;
+  line-height: 35px;
   color: var(--secondary-color);
   overflow: hidden;
   height: 0;
