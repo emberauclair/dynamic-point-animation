@@ -1,7 +1,21 @@
-body {
-  background-color: #202124;
+:root {
+  --primary-color: rgb(74, 198, 255);
+  --secondary-color: rgb(215, 165, 221);
+  --text-color: #9aa0a5;
+  --background-color: #202124;
+  --card-background-color: #303134;
+  --card-border-radius: 10px;
+  --card-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  --card-box-shadow-active: 0 15px 30px rgba(0, 0, 0, 0.1);
+  --transition-duration: 0.3s;
+  --font-size-small: 3vmin;
+  --font-size-medium: 5vmin;
+  --font-size-large: 6vmin;
 }
 
+body {
+  background-color: var(--background-color);
+}
 
 #canvas {
   position: absolute;
@@ -12,9 +26,9 @@ body {
 }
 
 #heading {
-  color: rgb(74, 198, 255);
+  color: var(--primary-color);
   text-transform: uppercase;
-  font-size: 6vmin;
+  font-size: var(--font-size-large);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,9 +38,9 @@ body {
 }
 
 #heading-sm {
-  color: rgb(74, 198, 255);
+  color: var(--primary-color);
   text-transform: uppercase;
-  font-size: 3vmin;
+  font-size: var(--font-size-small);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,54 +51,46 @@ body {
 .poem-card {
   margin: 15px;
   border: none;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  background-color: #303134;
-  color: #9aa0a5;
-  transition: all 0.3s ease;
+  box-shadow: var(--card-box-shadow);
+  border-radius: var(--card-border-radius);
+  background-color: var(--card-background-color);
+  color: var(--text-color);
+  transition: all var(--transition-duration) ease;
 }
 
-.poem-card:hover .poem-card:active{
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+.poem-card:hover,
+.poem-card:active {
+  box-shadow: var(--card-box-shadow-active);
   transform: translateY(-3px);
 }
-
 
 .poem-card .card-title {
   font-size: 3.5vmin;
   font-weight: bold;
   margin: 10px 0;
-  color: rgb(74, 198, 255);
+  color: var(--primary-color);
   text-align: center;
-}
-
-
-
-.poem-card .card-text {
-  font-size: 2.5vmin;
-  line-height: 24px;
-  color: rgb(215, 165, 221);
-  overflow: hidden;
-  height: 0;
-  transition: all 0.3s ease;
 }
 
 @media (max-width: 1200px) {
   .poem-card .card-text {
     line-height: 55px;
-    font-size: 5vmin;
+    font-size: var(--font-size-medium);
   }
   .poem-card .card-title {
-    font-size: 6vmin;
+    font-size: var(--font-size-large);
   }
 }
 
-
 .poem-card .card-text {
-  height: 0;
+  font-size: var(--font-size-small);
+  line-height: 24px;
+  color: var(--secondary-color);
   overflow: hidden;
-  transition: all 0.3s ease;
+  height: 0;
+  transition: all var(--transition-duration) ease;
 }
+
 .poem-card .card-text.visible {
   height: auto;
   overflow: visible;
