@@ -85,6 +85,10 @@ body {
   overflow: hidden;
   transition: all 0.3s ease;
 }
+.poem-card .card-text.visible {
+  height: auto;
+  overflow: visible;
+}
 
 .poem-card:hover .card-text,
 .poem-card:active .card-text {

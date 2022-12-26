@@ -4,6 +4,18 @@ let resizeReset = function() {
 }
 
 
+
+// Get all poem cards
+const poemCards = document.querySelectorAll('.poem-card');
+
+// Add a click event listener to each poem card
+poemCards.forEach(card => {
+  card.addEventListener('click', event => {
+    // Toggle the 'visible' class on the card text element
+    event.currentTarget.querySelector('.card-text').classList.toggle('visible');
+  });
+});
+
 const opts = { 
 	particleColor: "rgb(74,198,255)",
 	lineColor: "rgb(173,98,181)",
