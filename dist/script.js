@@ -1,13 +1,13 @@
 let resizeReset = function() {
 	w = canvasBody.width = window.innerWidth;
-	h = canvasBody.height = window.innerHeight;
+	h = canvasBody.height = window.innerHeight*2;
 }
 
 
 const opts = { 
 	particleColor: "rgb(74,198,255)",
 	lineColor: "rgb(173,98,181)",
-	particleAmount: 80,
+	particleAmount: 160,
 	defaultSpeed: 0.01,
 	variantSpeed: 1,
 	defaultRadius: 3,
