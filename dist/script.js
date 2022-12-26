@@ -1,13 +1,25 @@
 let resizeReset = function() {
 	w = canvasBody.width = window.innerWidth;
-	h = canvasBody.height = window.innerHeight;
+	h = canvasBody.height = window.innerHeight*2;
 }
 
+
+
+// Get all poem cards
+const poemCards = document.querySelectorAll('.poem-card');
+
+// Add a click event listener to each poem card
+poemCards.forEach(card => {
+  card.addEventListener('click', event => {
+    // Toggle the 'visible' class on the card text element
+    event.currentTarget.querySelector('.card-text').classList.toggle('visible');
+  });
+});
 
 const opts = { 
 	particleColor: "rgb(74,198,255)",
 	lineColor: "rgb(173,98,181)",
-	particleAmount: 80,
+	particleAmount: 160,
 	defaultSpeed: 0.01,
 	variantSpeed: 1,
 	defaultRadius: 3,

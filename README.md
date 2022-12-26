@@ -1,10 +1,15 @@
 
-# Visit Site [Here](https://emberauclair.github.io/dynamic-point-animation/dist/poem-index.html)
+# Visit Site [Here](https://emberauclair.github.io/dynamic-point-animation/dist/index.html)
 
 
 
 
-# Dynamic Point Mesh Animation with HTML5 Canvas
+
+
+
+
+
+# Dynamic Point Mesh Animation with HTML5 Canvas (source of JS animation)
 
 A Pen created on CodePen.io. Original URL: [https://codepen.io/Reli1/pen/bGKpvLa](https://codepen.io/Reli1/pen/bGKpvLa).
 

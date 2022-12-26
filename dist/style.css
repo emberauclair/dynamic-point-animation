@@ -44,10 +44,11 @@ body {
   transition: all 0.3s ease;
 }
 
-.poem-card:hover {
+.poem-card:hover .poem-card:active{
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
   transform: translateY(-3px);
 }
+
 
 .poem-card .card-title {
   font-size: 3.5vmin;
@@ -83,6 +84,10 @@ body {
   height: 0;
   overflow: hidden;
   transition: all 0.3s ease;
+}
+.poem-card .card-text.visible {
+  height: auto;
+  overflow: visible;
 }
 
 .poem-card:hover .card-text,
