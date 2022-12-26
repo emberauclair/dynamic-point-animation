@@ -102,3 +102,35 @@ body {
   height: auto;
   overflow: visible;
 }
+
+#home-button {
+  background-color: rgb(74, 198, 255);
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#about-button {
+  background-color: rgb(74, 198, 255);
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+/* makes everything in an a tag in html this color*/
+a {
+  color: var(--primary-color);
+}
+a:hover {
+  color: #9ce0ff
+}
