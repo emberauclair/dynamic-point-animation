@@ -116,6 +116,7 @@ body {
   overflow: visible;
 }
 
+/* desktop specific settings */
 @media (min-width: 1200px) {
   .poem-card .card-text {
     line-height: 32px;
@@ -125,7 +126,11 @@ body {
   .poem-card .card-title {
     font-size: var(--font-size-medium);
   }
+
 }
+
+
+/* mobile specific settings */
 
 
 #home-button {
@@ -158,6 +163,11 @@ body {
   background: linear-gradient(to top, rgba(74, 198, 255, 0.8), rgba(74, 198, 255, 0.6));
 
 }
+@media (max-width: 1200px) {
+  #home-button, #about-button {
+    font-size:xx-large;
+  }
+  }
 
 /* makes everything in an a tag in html this color*/
 a {
