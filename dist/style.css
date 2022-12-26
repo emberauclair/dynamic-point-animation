@@ -1,7 +1,7 @@
 :root {
-  --primary-color: rgb(74, 198, 255);
-  --secondary-color: rgb(215, 165, 221);
-  --text-color: #9aa0a5;
+  --primary-color: #4AC6FF;
+  --secondary-color: #D7A5DD;
+  --text-color: #9AA0A5;
   --background-color: #202124;
   --card-background-color: #303134;
   --card-border-radius: 10px;
@@ -12,6 +12,7 @@
   --font-size-medium: 5vmin;
   --font-size-large: 6vmin;
 }
+
 
 body {
   background-color: var(--background-color);
