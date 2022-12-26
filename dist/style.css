@@ -11,11 +11,18 @@
   --font-size-small: 3vmin;
   --font-size-medium: 5vmin;
   --font-size-large: 6vmin;
+  --font-size-xlarge: 10vmin;
+  --font-size-xxlarge: 15vmin;
+
 }
 
 
 body {
   background-color: var(--background-color);
+  
+  /* Use the linear-gradient function to create a gradient that fades from solid to transparent */
+
+
 }
 
 #canvas {
@@ -57,6 +64,8 @@ body {
   background-color: var(--card-background-color);
   color: var(--text-color);
   transition: all var(--transition-duration) ease;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.791), rgba(0, 0, 0, 0.323));
+
 }
 
 .poem-card:hover,
@@ -73,19 +82,27 @@ body {
   text-align: center;
 }
 
+/* Add a new class to center the poem card text */
+.poem-card.center {
+  text-align: center;
+}
+
+
+
 @media (max-width: 1200px) {
   .poem-card .card-text {
     line-height: 55px;
     font-size: var(--font-size-medium);
   }
+
   .poem-card .card-title {
     font-size: var(--font-size-large);
   }
 }
 
 .poem-card .card-text {
-  font-size: var(--font-size-small);
-  line-height: 35px;
+  font-size: var(--font-size-medium);
+  line-height: 60px;
   color: var(--secondary-color);
   overflow: hidden;
   height: 0;
@@ -103,6 +120,14 @@ body {
   overflow: visible;
 }
 
+.poem-card .card-text.always-visible {
+  height: auto;
+  overflow: visible;
+}
+
+
+
+
 #home-button {
   background-color: rgb(74, 198, 255);
   border: none;
@@ -113,6 +138,7 @@ body {
   display: inline-block;
   font-size: 16px;
 }
+
 #about-button {
   background-color: rgb(74, 198, 255);
   border: none;
@@ -122,15 +148,16 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-    position: absolute;
-    top: 0px;
-    right: 0px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 
 /* makes everything in an a tag in html this color*/
 a {
   color: var(--primary-color);
 }
+
 a:hover {
   color: #9ce0ff
 }
